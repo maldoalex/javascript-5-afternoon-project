@@ -105,15 +105,14 @@ Movie.prototype.changeRating = function(num) {
 
 // Once the User constructor function is created, write a prototype method for the User function. Name this method addSavedPost. It should take in three parameters: id (a number), title (a string) and rating (a number). Use these parameters to create a new object and add it to the savedPosts array. Make sure to name the properties the same as described previously (id, title, rating).
 
+// ********** everything is working but problem 5 asked you to make a constructor function not a class. ************
+
 // Code here
-class User {
-  constructor(name, age, email, savedPosts) {
-    this.name = name;
-    this.age = age;
-    this.email = email;
-    this.savedPosts = savedPosts;
-    // [obj={id:1;title:2;rating:3}]
-  }
+function User(name, age, email, savedPosts) {
+  this.name = name;
+  this.age = age;
+  this.email = email;
+  this.savedPosts = savedPosts;
 }
 
 User.prototype.addSavedPost = function(id, title, rating) {
